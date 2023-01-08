@@ -20,5 +20,18 @@ n2 = input("Student 2 name: ")
 Nos1 = [95, 80, 90]
 Nos2 = [70, 99, 63]
 
-Dict = { "Student_1 Name": n1, " Studen_1 Numbers": Nos1, "Student_2 Name": n2, "Student_2 Numbers": Nos2}
-print(Dict)
+sum1, sum2 = 0, 0
+for ele in Nos1:
+    sum1 += ele
+
+for ele in Nos2:
+    sum2 += ele
+
+avg1 = sum1 / len(Nos1)
+avg2 = sum2 / len(Nos2)
+
+D = dict([(n1, Nos1), (n2, Nos2)])
+print(D)
+# Dict = { "Student_1 Name": n1, " Studen_1 Numbers": Nos1, "Student_2 Name": n2, "Student_2 Numbers": Nos2}
+print("Student_1 name is: ", n1, ". His average marks is: ", avg1)
+print("Student_2 name is: ", n2, ". His average marks is: ", avg2)
